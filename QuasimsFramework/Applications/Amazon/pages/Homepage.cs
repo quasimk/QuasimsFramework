@@ -22,6 +22,12 @@ namespace QuasimsFramework.Applications.Amazon.pages
         public IWebElement FootballHeader => Webdriver.driver.FindElement(By.XPath("//span[contains(@class, 'a-color-state a-text-bold') and contains(.,'football')]"));
 
         public IWebElement BasketNumber => Webdriver.driver.FindElement(By.XPath("//*[@id=\"nav-cart-count\"]"));
+
+        public IWebElement CustomerServicesTab => Webdriver.driver.FindElement(By.XPath("//*[@id=\"nav-xshop\"]/a[4]"));
+        public IWebElement MusicHeader => Webdriver.driver.FindElement(By.XPath("//*[@id=\"nav-subnav\"]/a[1]/span/img"));
+
+
+
         public Homepage(Driver driver)
         {
             Webdriver = driver;

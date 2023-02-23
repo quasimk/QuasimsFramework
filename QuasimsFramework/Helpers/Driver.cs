@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 
 namespace QuasimsFramework.Helpers
 {

@@ -12,7 +12,7 @@ namespace QuasimsFramework.Applications.Amazon.pages
     {
         public Driver driver;
 
-        public IWebElement SearchedResult => driver.driver.FindElement(By.XPath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div/div[1]/span/a/div/img"));
+        public IWebElement SearchedResult => driver.driver.FindElement(By.XPath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[8]/div/div/div/div/div[2]/span/a/div/img"));
 
         public IWebElement AddToBasketButton => driver.driver.FindElement(By.XPath("//*[@id=\"add-to-cart-button\"]"));
 

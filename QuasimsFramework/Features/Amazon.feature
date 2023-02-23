@@ -19,3 +19,8 @@ Scenario: Validating an item is added to your basket
 Given I search for "Coffee machine" on the homepage
 When I add the item that has been searched for to basket
 Then I can validate that the item has been added to the basket
+
+Scenario: Failed test
+Given I am on the Amazon Website
+When I click the customer service button on the nav bar
+Then the "amazon music" tab will appear on the right hand side of the page

@@ -98,6 +98,26 @@ namespace QuasimsFramework.StepDefinitions
             _amazon.Homepage.BasketNumber.Displayed.Should().BeTrue();
         }
 
+        [StepDefinition(@"I am on the Amazon Website")]
+        public void GivenIAmOnTheAmazonWebsite()
+        {
+    
+              _driver.initaliseDriver();
+            _amazon.Homepage.CookiesButton.Click();
+
+        }
+        [When(@"I click the customer service button on the nav bar")]
+        public void WhenIClickTheCustomerServiceButtonOnTheNavBar()
+        {
+            _amazon.Homepage.CustomerServicesTab.Click();
+        }
+
+        [Then(@"the ""([^""]*)"" tab will appear on the right hand side of the page")]
+        public void ThenTheTabWillAppearOnTheRightHandSideOfThePage(string p0)
+        {
+            _amazon.Homepage.MusicHeader.Displayed.Should().BeTrue();
+        }
+
 
     }
 
