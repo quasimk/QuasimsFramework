@@ -34,7 +34,7 @@ namespace QuasimsFramework.StepDefinitions
         [StepDefinition(@"I am on the Amazon Homepage")]
         public void GivenIAmOnTheAmazonHomepage()
         {
-            _driver.initaliseDriver();
+           
             _amazon.Homepage.CookiesButton.Click();
 
         }
@@ -78,7 +78,7 @@ namespace QuasimsFramework.StepDefinitions
 
     
         {
-            _driver.initaliseDriver();
+           // _driver.InitaliseDriver();
             _amazon.Homepage.CookiesButton.Click();
             _amazon.Homepage.Searchbox.Click();
             _amazon.Homepage.Searchbox.SendKeys(p0);
@@ -102,7 +102,7 @@ namespace QuasimsFramework.StepDefinitions
         public void GivenIAmOnTheAmazonWebsite()
         {
     
-              _driver.initaliseDriver();
+           //   _driver.initaliseDriver();
             _amazon.Homepage.CookiesButton.Click();
 
         }

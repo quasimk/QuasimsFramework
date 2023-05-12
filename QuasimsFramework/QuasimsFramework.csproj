@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -25,21 +25,20 @@
     </PackageReference>
     <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
     <PackageReference Include="Selenium.Support" Version="4.8.1" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="110.0.5481.7700" />
-    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="110.0.1587.50" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="112.0.5615.4900" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="112.0.1722.39" />
     <PackageReference Include="SpecFlow" Version="3.9.74" />
     <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="WebDriverManager" Version="2.16.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Screenshot\" />
     <Folder Include="Support\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Drivers\chromedriver.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Drivers\geckodriver.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

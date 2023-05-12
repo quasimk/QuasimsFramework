@@ -10,14 +10,14 @@ namespace QuasimsFramework.Applications.Amazon
 {
     public class Amazon
     {
-        Driver driver;
+        Driver _driver;
         public Amazon(Driver driver)
         {
-            this.driver = driver;
+            _driver = driver; 
         }
-        public Homepage Homepage => new Homepage(driver);
-        public LoginPage LoginPage => new LoginPage(driver);
+        public Homepage Homepage => new Homepage(_driver);
+        public LoginPage LoginPage => new LoginPage(_driver);
         
-        public SearchedResults SearchedResults => new SearchedResults(driver);
+        public SearchedResults SearchedResults => new SearchedResults(_driver);
     }
 }
